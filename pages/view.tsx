@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Tree from '../components/Tree'
+import {treeDataInfo} from '../types/treeDataInfo'
 
 type Props = {
-  treeData: object[]
+  treeData: treeDataInfo[]
 }
 
 const View: NextPage<Props> = ({treeData}) => {

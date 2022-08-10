@@ -1,13 +1,9 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 import TreeNode from './TreeNode'
-
-type data = {
-  name: string,
-  children: object[]
-}
+import {treeDataInfo} from '../types/treeDataInfo'
 
 type Props = {
-  treeData: data[]
+  treeData: treeDataInfo[]
 }
 
 const Tree:FunctionComponent<Props> = ({treeData}) => {
